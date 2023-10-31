@@ -53,8 +53,39 @@ a {
    border-radius: 2rem;
    box-shadow: $boxShadow;
    transition: $transition;
+   border: 1px solid $green;
 
    &:hover {
-    opacity: .9;
+    // opacity: .9;
+    background-color: #fff;
+    color: $textColor;
    }
+}
+
+.component-name {
+    color: $pinkColor;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @include breakpoint-down(small) {
+        letter-spacing: 1px;
+    }
+
+    @include breakpoint-down(x-small) {
+        font-size: .875rem;
+    }
+}
+
+.component-description {
+    margin-top: 1rem;
+    font-size: 3rem;
+
+    @include breakpoint-down(small) {
+        font-size: 2rem;
+    }
+
+    @include breakpoint-down(x-small) {
+        font-size: 1.5rem;
+    }
 }

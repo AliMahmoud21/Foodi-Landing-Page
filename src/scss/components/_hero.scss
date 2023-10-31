@@ -91,6 +91,13 @@
                     background-color: transparent;
                     box-shadow: none;
                     color: $textColor;
+                    border: none;
+                    outline: none;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $green;
+                    }
 
                     @include breakpoint-down(small) {
                         gap: .5rem;
@@ -228,6 +235,11 @@
                     box-shadow: $boxShadow2;
                     padding: .75rem 1.5rem;
                     border-radius: 1rem;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
 
                     @include breakpoint-down(small) {
                         padding: .5rem;
